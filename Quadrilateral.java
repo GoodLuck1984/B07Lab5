@@ -13,7 +13,7 @@ public class Quadrilateral {
 		this.D = D;
 	}
 	
-	// Calculate the preimeter
+	// Calculate the perimeter
 	public double perimeter() {
 		double sum = A.distance(B) + B.distance(C) + C.distance(D) + D.distance(A);
 		return sum;
@@ -51,4 +51,5 @@ public class Quadrilateral {
 				
 		return area;
 	}
+
 }
