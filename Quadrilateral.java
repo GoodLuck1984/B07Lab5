@@ -22,14 +22,14 @@ public class Quadrilateral {
 	// Check if the quadrangle is a square.
 	public boolean isSquare() {
 		boolean isSquare = true;
-		double AB = A.distance(B);
-		double BC = B.distance(C);
-		double CD = C.distance(D);
-		double DA = D.distance(A);
+		double AB_ = A.distance(B);
+		double BC_ = B.distance(C);
+		double CD_ = C.distance(D);
+		double DA_ = D.distance(A);
 		
-		isSquare = Math.abs(AB - BC) < 1e-9 &&
-                Math.abs(BC - CD) < 1e-9 &&
-                Math.abs(CD - DA) < 1e-9;
+		isSquare = Math.abs(AB_ - BC_) < 1e-9 &&
+                Math.abs(BC_ - CD_) < 1e-9 &&
+                Math.abs(CD_ - DA_) < 1e-9;
 		
 		Point AB = new Point(B.x - A.x, B.y - A.y);
 		Point BC = new Point(C.x - B.x, C.y - B.y);
@@ -53,3 +53,4 @@ public class Quadrilateral {
 	}
 
 }
+
